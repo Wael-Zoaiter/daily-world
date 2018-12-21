@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "wael-zoaiter.github.io/daily-world",
+  "homepage": "https://wael-zoaiter.github.io/daily-world",
   "eslintConfig": {
     "extends": "react-app"
   },
