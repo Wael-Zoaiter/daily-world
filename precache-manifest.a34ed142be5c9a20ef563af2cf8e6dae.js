@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/daily-world/static/js/runtime~main.20f8867b.js"
   },
   {
-    "revision": "08a6e44e17c2d92109f1",
-    "url": "/daily-world/static/js/main.08a6e44e.chunk.js"
+    "revision": "ddab778be5042e601c6a",
+    "url": "/daily-world/static/js/main.ddab778b.chunk.js"
   },
   {
     "revision": "720bb394f984eefc212e",
     "url": "/daily-world/static/js/1.720bb394.chunk.js"
   },
   {
-    "revision": "a9ad9c7ef7ca7d97a16ae2eb481fa793",
+    "revision": "24a214f0e7e25f9322f6150aae467a70",
     "url": "/daily-world/index.html"
   }
 ];
