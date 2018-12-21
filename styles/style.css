@@ -8823,6 +8823,15 @@ footer {
   font-weight: 200;
   text-align: center;
 }
+footer a {
+  color: inherit;
+}
+footer:hover {
+  background-image: url(../images/texture_main.jpg);
+}
+footer:hover a {
+  color: inherit;
+}
 
 .latest-news, .movies, .books {
   padding: 1rem 0;

@@ -134,6 +134,15 @@ footer {
   color: $text-dark-inverse;
   font-weight: 200;
   text-align: center;
+  a {
+    color: inherit;
+  }
+  &:hover {
+    background-image: url(../images/texture_main.jpg);
+    a {
+      color: inherit;
+    }
+  }
 }
 
 // LatestNews
