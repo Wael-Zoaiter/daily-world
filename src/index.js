@@ -2,6 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { Provider } from 'react-redux';
 
-// api: https://www.reddit.com/r/pics.json
+import { createStore, applyMiddleware } from 'redux';
+
+// Middlewares
+import thunk from 'redux-thunk';
+
+// Reducers
+import rootReducer from './reducers';
+
+const storeWithMiddleware = createStore(rootReducer, applyMiddleware(thunk));
+
+ReactDOM.render(
+    <Provider store={storeWithMiddleware}>
+        <App />
+    </Provider>
+, document.getElementById('root'));

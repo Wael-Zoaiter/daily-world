@@ -1,0 +1,12 @@
+{
+  "name": "News application",
+  "description": "Simple react app.",
+  "repository": "https://github.com/Wael-Zoaiter/react-project.git",
+  "logo": "",
+  "keywords": [
+    "react",
+    "front-end",
+    "javascript"
+  ],
+  "image": "heroku/nodejs"
+}

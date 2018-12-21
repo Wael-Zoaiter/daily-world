@@ -6,22 +6,39 @@ import Header from './layout/Header';
 import Footer from './layout/Footer';
 
 // Components
-import Home from './components/Home';
-import Artist from './components/Artist';
+import Home from './containers/Home';
 import NotFound from './components/NotFound';
+import SingleNews from './containers/SingleNews';
+import SingleMovies from './containers/SingleMovies';
+import SingleBooks from './containers/SingleBooks';
 
 class App extends Component {
-  render() {
+  state = {
+    mode: 'dark'
+  }
+
+  toggleMode = () => {
+    this.setState(state => {
+      let newMode = state.mode === 'dark' ? 'light' : 'dark';
+      return {
+        mode: newMode
+      }
+    })
+  }
+
+  render() {    
     return (
       <BrowserRouter>
-        <div className="wi-bg-main">
-          <Route path="*" component={Header} />
+        <div className={`bg-${this.state.mode}`}>
+          <Header mode={this.state.mode} toggle={() => this.toggleMode()} />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/artist/:id" component={Artist} />
+            <Route path="/news/:id" component={SingleNews} />
+            <Route path="/movies/:id" component={SingleMovies} />
+            <Route path="/books/:id" component={SingleBooks} />
             <Route path="*" component={NotFound} />
           </Switch>
-          <Route path="*" component={Footer} />
+          <Footer/>
         </div>
       </BrowserRouter>
     );
