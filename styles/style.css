@@ -8803,6 +8803,10 @@ header .mode {
   font-weight: 500;
   cursor: pointer;
 }
+header h1, header .mode {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 .navbar {
   padding: 0;
@@ -8870,6 +8874,11 @@ footer:hover a {
 
 .movies {
   background-color: var(--contrast-10);
+}
+.movies img {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 .movies .card, .movies .card-body, .movies .card-footer, .movies .card-header {
   border-color: var(--background);
@@ -8944,7 +8953,7 @@ footer:hover a {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(calc(255 - var(--bw-01)), calc(255 - var(--bw-01)), calc(255 - var(--bw-01)), 0.7);
 }
 .slider-section .carousel .carousel-item .carousel-caption {
   display: flex;
@@ -8958,6 +8967,11 @@ footer:hover a {
 }
 .slider-section .carousel .carousel-item .carousel-caption p {
   font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .slider-section .carousel .carousel-item .carousel-caption {
+    align-items: center;
+  }
 }
 
 .nav {
